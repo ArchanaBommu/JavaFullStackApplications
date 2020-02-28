@@ -1,0 +1,6 @@
+package com.orm.model;
+
+@Entity
+public class Dept {
+
+}

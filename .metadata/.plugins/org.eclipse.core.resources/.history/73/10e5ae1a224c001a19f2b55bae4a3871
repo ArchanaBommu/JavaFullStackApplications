@@ -1,0 +1,13 @@
+package com.ioc.system;
+
+public class ABCCompany implements Company {
+
+	
+	public void establish(String name) {
+		// TODO Auto-generated method stub
+		
+		System.out.println(name+"company is established");
+		
+	}
+
+}

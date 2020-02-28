@@ -1,0 +1,12 @@
+package com.ioc.system;
+
+public class XYZCompany implements Company {
+
+private BusinessOperation branch;
+	public void establish(String name) {
+		// TODO Auto-generated method stub
+		System.out.println("Registered and Started" +name+"Company");
+		branch.perform("Bengaluru");
+	}
+
+}

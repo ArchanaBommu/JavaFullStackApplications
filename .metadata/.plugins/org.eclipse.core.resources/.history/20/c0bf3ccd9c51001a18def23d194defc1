@@ -1,0 +1,33 @@
+package com.boot.services;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.boot.repositories.CityRepository;
+
+@Service
+public class DataService {
+	
+	@Autowired
+	CityRepository cityrepo;
+	
+	public List<City> getCity()
+	{
+		return (List<City>cityrepo.findAll();
+	}
+	
+	public Map<String,String[]> names()
+	{
+		String[] names= {"Nirmal","Harry","Johny","Praveen","Raju","Arjun"};
+		String[] names1= {"Shan","Johan","Paul"};
+		Map<String, String[]> map = new HashMap<String,String[]>();
+		map.put("team1",names);
+		map.put("team2",names1);
+		return map;
+		
+	}
+
+}

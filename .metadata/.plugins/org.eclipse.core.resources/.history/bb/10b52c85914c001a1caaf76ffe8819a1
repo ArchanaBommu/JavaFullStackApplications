@@ -1,0 +1,13 @@
+package com.ioc.system2;
+
+@Component
+public class ERPProject implements Project {
+
+	@Override
+	public void details() {
+		// TODO Auto-generated method stub
+		System.out.println("ERP Project Started");
+		
+	}
+
+}

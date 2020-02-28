@@ -1,0 +1,18 @@
+package com.orm.model;
+
+import javax.persistence.Id;
+
+public class Contact {
+	@Id
+	private Integer eno;
+	
+	private Integer dno;
+	
+	private String street;
+	
+	private Integer mobile;
+	
+	
+	
+
+}

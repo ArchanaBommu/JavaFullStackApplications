@@ -1,0 +1,21 @@
+package com.ioc.system;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class ABCCompany implements Company {
+
+	@Autowired
+	private BusinessOperation branch;
+	@Autowired
+	private BusinessOperation manufacturing;
+	public void establish(String name) {
+		// TODO Auto-generated method stub
+		
+		System.out.println(name+"company is established");
+		
+		branch.perform("Chennai");
+		manufacturing.perform("Tyre Maufacturing");
+		
+	}
+
+}

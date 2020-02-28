@@ -1,0 +1,20 @@
+package com.orm.run;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import com.orm.utils.SessionProvider;
+
+public class HibernateRun4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		SessionFactory sf = SessionProvider.getSessionFactory();
+		Session s = sf.openSession();
+		Transaction t = s.beginTransaction();
+		
+
+	}
+
+}

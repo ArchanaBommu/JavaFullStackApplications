@@ -1,0 +1,61 @@
+package com.orm.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Contact {
+	@Id
+	private Integer eno;
+	@Column
+	private String dno;
+	@Column
+	private String street;
+	@Column
+	private String mobile;
+	public Integer getEno() {
+		return eno;
+	}
+	public void setEno(Integer eno) {
+		this.eno = eno;
+	}
+	public String getDno() {
+		return dno;
+	}
+	public void setDno(String dno) {
+		this.dno = dno;
+	}
+	public String getStreet() {
+		return street;
+	}
+	public void setStreet(String street) {
+		this.street = street;
+	}
+	public String getMobile() {
+		return mobile;
+	}
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
+	}
+	public Contact(Integer eno, String dno, String street, String mobile) {
+		super();
+		this.eno = eno;
+		this.dno = dno;
+		this.street = street;
+		this.mobile = mobile;
+	}
+	public Contact() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	@Override
+	public String toString() {
+		return "Contact [eno=" + eno + ", dno=" + dno + ", street=" + street + ", mobile=" + mobile + "]";
+	}
+	
+	
+	
+	
+
+}

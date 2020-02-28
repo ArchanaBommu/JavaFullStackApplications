@@ -1,0 +1,19 @@
+$(document).ready(
+		
+		function(){
+			
+			$('#city').keyup(
+					
+					function(){
+						let pattern=$('#city').val();
+						
+						$.get("http://localhost:8081/api/cities/"+pattern,function(data){
+							
+						});
+					}
+			);
+		}
+
+);
+
+

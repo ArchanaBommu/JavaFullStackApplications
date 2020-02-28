@@ -1,0 +1,12 @@
+package com.springmvc.model;
+
+
+@Service
+public class DataService {
+	
+	public String[] getPeople() {
+		String n[]= {"Nicholas","John","Mervin","Hussey","Vinay"};
+		return n;
+	}
+
+}
